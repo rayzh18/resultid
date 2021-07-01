@@ -1,0 +1,16 @@
+@import '@carbon/themes/scss/themes';
+// Use the white theme
+$carbon--theme: map-merge($carbon--theme--white, (
+    active-tertiary: #EDF5FF,
+));
+
+// Use the gray 90 theme
+// $carbon--theme: map-merge($carbon--theme--g90, (
+//     selected-light-ui: #525252,
+//     active-tertiary: #6F6F6F,
+// ));
+@include carbon--theme();
+
+// @import '~carbon-components/scss/globals/scss/styles.scss';
+@import '~carbon-components/scss/globals/scss/theme';
+@import 'style.scss';
